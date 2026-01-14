@@ -1,0 +1,55 @@
+{
+  "name": "@flowpay-io/embed-sandbox-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Embed Sandbox application",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "dev:server": "tsx watch --env-file=.env server.ts",
+    "server": "tsx server.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@flowpay-io/embed-auth": "1.0.1",
+    "@flowpay-io/embed-core": "1.0.0",
+    "@flowpay-io/embed-react": "1.0.0",
+    "@flowpay-io/shared": "1.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.68.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
+  },
+  "keywords": [
+    "flowpay",
+    "flowpay.js",
+    "embed",
+    "example",
+    "demo"
+  ],
+  "author": "Flowpay (https://www.flowpay.io)",
+  "license": "MIT",
+  "homepage": "https://developers.flowpay.io",
+  "packageManager": "pnpm@10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48"
+}
