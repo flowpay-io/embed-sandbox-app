@@ -1,4 +1,3 @@
-import type { FlowpayLaunchPayload } from "@flowpay-io/shared/types";
 import { FlowpayModal, useFlowpayEmbed } from "@flowpay-io/embed-react";
 import {
   createSignedLogin,
@@ -43,7 +42,7 @@ function App() {
       error: (...args) => console.error("[Embed Client]", ...args),
     },
     signatureProvider: {
-      signPayload: async (payload: FlowpayLaunchPayload) =>
+      signPayload: async (payload) =>
         await createSignedLogin(
           payload,
           createRemoteSigner(SIGNING_ENDPOINT_URL)

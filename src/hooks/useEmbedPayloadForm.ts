@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import { type FlowpayLaunchPayload } from "@flowpay-io/shared/types";
+import { type InputLaunchPayload } from "@flowpay-io/embed-core";
 import { type EmbedFormData } from "../types/EmbedPayloadForm.types";
 import { DEFAULT_PAYLOAD } from "../const";
 import { copySavedFormUrl } from "../utils/url-helpers";
@@ -7,15 +7,15 @@ import { useToast } from "./useToast";
 
 export interface IUseEmbedPayloadFormReturn {
   initialFormValues: EmbedFormData;
-  launchPayload: FlowpayLaunchPayload;
-  handleCopySavedFormUrl: (payload: FlowpayLaunchPayload) => void;
-  handleSetData: (payload: FlowpayLaunchPayload) => void;
+  launchPayload: InputLaunchPayload;
+  handleCopySavedFormUrl: (payload: InputLaunchPayload) => void;
+  handleSetData: (payload: InputLaunchPayload) => void;
 }
 
 export function useEmbedPayloadForm(): IUseEmbedPayloadFormReturn {
   const { showToast } = useToast();
   const [launchPayload, setLaunchPayload] =
-    useState<FlowpayLaunchPayload>(DEFAULT_PAYLOAD);
+    useState<InputLaunchPayload>(DEFAULT_PAYLOAD);
 
   const initialFormData = useMemo(() => {
     const params = new URLSearchParams(window.location.search);
@@ -47,14 +47,14 @@ export function useEmbedPayloadForm(): IUseEmbedPayloadFormReturn {
   const { formValues: initialFormValues } = initialFormData;
 
   const handleSetData = useCallback(
-    (payload: FlowpayLaunchPayload) => {
+    (payload: InputLaunchPayload) => {
       setLaunchPayload(payload);
     },
     [setLaunchPayload]
   );
 
   const handleCopySavedFormUrl = useCallback(
-    (payload: FlowpayLaunchPayload) => {
+    (payload: InputLaunchPayload) => {
       try {
         copySavedFormUrl(payload);
         showToast("Form URL copied to clipboard", "success");

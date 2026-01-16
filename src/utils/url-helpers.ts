@@ -1,10 +1,10 @@
-import { FlowpayLaunchPayload } from "@flowpay-io/shared/types";
+import { InputLaunchPayload } from "@flowpay-io/embed-core";
 
 /**
  * Copies the saved form URL to clipboard
  * @param payload - The launch payload
  */
-export function copySavedFormUrl(payload: FlowpayLaunchPayload): void {
+export function copySavedFormUrl(payload: InputLaunchPayload): void {
   const savedUrl = new URL(window.location.href);
   const base64formData = btoa(JSON.stringify(payload));
   savedUrl.searchParams.set("payload", base64formData);

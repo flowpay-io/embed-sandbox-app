@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { useForm, useFieldArray, Controller } from "react-hook-form";
-import {
-  IsoCountryCode,
-  type FlowpayLaunchPayload,
-} from "@flowpay-io/shared/types";
+import { IsoCountryCode } from "@flowpay-io/shared/types";
+import { type InputLaunchPayload } from "@flowpay-io/embed-core";
 import {
   type EmbedFormData,
   type EmbedPayloadFormProps,
@@ -36,7 +34,7 @@ export function EmbedPayloadForm({
 
   const getPayloadFromFormData = (
     formData: EmbedFormData
-  ): FlowpayLaunchPayload => {
+  ): InputLaunchPayload => {
     return {
       country: formData.country,
       email: formData.email,

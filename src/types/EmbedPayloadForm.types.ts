@@ -1,15 +1,16 @@
-import type { FlowpayLaunchPayload } from "@flowpay-io/shared/types";
+import type { InputLaunchPayload } from "@flowpay-io/embed-core";
+
 export interface TenantInput {
   id: string;
   name: string;
 }
 
-export interface EmbedFormData extends Omit<FlowpayLaunchPayload, "tenants"> {
+export interface EmbedFormData extends Omit<InputLaunchPayload, "tenants"> {
   tenants: TenantInput[];
 }
 
 export interface EmbedPayloadFormProps {
-  onSubmit: (payload: FlowpayLaunchPayload) => void;
+  onSubmit: (payload: InputLaunchPayload) => void;
   initialValues?: EmbedFormData;
-  onCopySavedFormUrl: (payload: FlowpayLaunchPayload) => void;
+  onCopySavedFormUrl: (payload: InputLaunchPayload) => void;
 }

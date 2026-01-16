@@ -14,10 +14,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@flowpay-io/embed-auth": "1.0.1",
-    "@flowpay-io/embed-core": "1.0.0",
-    "@flowpay-io/embed-react": "1.0.0",
-    "@flowpay-io/shared": "1.0.1",
+    "@flowpay-io/embed-auth": "1.0.2",
+    "@flowpay-io/embed-core": "1.0.1",
+    "@flowpay-io/embed-react": "1.0.1",
+    "@flowpay-io/shared": "1.0.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "react": "^19.0.0",
