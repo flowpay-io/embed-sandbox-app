@@ -12,14 +12,14 @@ importers:
         specifier: 1.0.3
         version: 1.0.3
       '@flowpay-io/embed-core':
+        specifier: 1.0.4
+        version: 1.0.4
+      '@flowpay-io/embed-react':
+        specifier: 1.0.4
+        version: 1.0.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@flowpay-io/shared':
         specifier: 1.0.3
         version: 1.0.3
-      '@flowpay-io/embed-react':
-        specifier: 1.0.3
-        version: 1.0.3(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@flowpay-io/shared':
-        specifier: 1.0.2
-        version: 1.0.2
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -364,17 +364,14 @@ packages:
   '@flowpay-io/embed-auth@1.0.3':
     resolution: {integrity: sha512-12Mx8k11DbTkTGDaK1RxZRMdl/THoHu3EneQQdVnl8v9q1p440R2XXCHg45KNzlWhDYQpcceb3mU0dmIxXJXVw==}
 
-  '@flowpay-io/embed-core@1.0.3':
-    resolution: {integrity: sha512-OlVFXlVjKtYeHzMdL6XIalKBvnf+I20J1fF+FiVtD3s7tQFtvtxHy78grfXNs26KB882P3zgPgnBQqoZrEQyDw==}
+  '@flowpay-io/embed-core@1.0.4':
+    resolution: {integrity: sha512-D/oMNFM8yh0KV7PlkZjhey5BaelpjpS5IeiaoMvRbvxq0UyxvYZNNyFPbNT0t6DXftguTzwilhLzlMYBTE4NQw==}
 
-  '@flowpay-io/embed-react@1.0.3':
-    resolution: {integrity: sha512-Sqm622y+4JaQzqcizMWouBm50+SxoGOZjDdKeJ9AdhxalJUUVg55cISRnZoLTO46nSMzDX3Jqzfe3VKceQj5Rw==}
+  '@flowpay-io/embed-react@1.0.4':
+    resolution: {integrity: sha512-k82ISS5ogYeBVfx6HFtsiMcBwb6ZybhZ6+WA2ZGDGC34ChJMlJTr/OOXzlXLzxEPnNgHI1ESgD7KUpLGShuNzg==}
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
-
-  '@flowpay-io/shared@1.0.2':
-    resolution: {integrity: sha512-OqgFUWASF3Eb4PKr1SFZHKQP95qosIX78IGRkfh90Q7sEfvAZsIBvfV+RsSFuCVqmNpBDmJ+lUZlKAEooos7NQ==}
 
   '@flowpay-io/shared@1.0.3':
     resolution: {integrity: sha512-fuKEv3fybzAOdD8f+KkyJjavXmVbZbRlPK1qb38W10atsdj/KFovXAPmJbZhlI3NeuNhdJlkDIlZzTj/RjdpHA==}
@@ -1700,20 +1697,18 @@ snapshots:
     dependencies:
       '@flowpay-io/shared': 1.0.3
 
-  '@flowpay-io/embed-core@1.0.3':
+  '@flowpay-io/embed-core@1.0.4':
     dependencies:
       '@flowpay-io/embed-auth': 1.0.3
       '@flowpay-io/shared': 1.0.3
       uuid: 11.1.0
 
-  '@flowpay-io/embed-react@1.0.3(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@flowpay-io/embed-react@1.0.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@flowpay-io/embed-core': 1.0.3
+      '@flowpay-io/embed-core': 1.0.4
       '@flowpay-io/shared': 1.0.3
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
-
-  '@flowpay-io/shared@1.0.2': {}
 
   '@flowpay-io/shared@1.0.3': {}
 

@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@flowpay-io/embed-auth": "1.0.3",
-    "@flowpay-io/embed-core": "1.0.3",
-    "@flowpay-io/embed-react": "1.0.3",
+    "@flowpay-io/embed-core": "1.0.4",
+    "@flowpay-io/embed-react": "1.0.4",
     "@flowpay-io/shared": "1.0.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
