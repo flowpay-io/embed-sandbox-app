@@ -15,8 +15,8 @@ importers:
         specifier: 1.0.4
         version: 1.0.4
       '@flowpay-io/embed-react':
-        specifier: 1.0.4
-        version: 1.0.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: 1.0.5
+        version: 1.0.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@flowpay-io/shared':
         specifier: 1.0.3
         version: 1.0.3
@@ -367,8 +367,8 @@ packages:
   '@flowpay-io/embed-core@1.0.4':
     resolution: {integrity: sha512-D/oMNFM8yh0KV7PlkZjhey5BaelpjpS5IeiaoMvRbvxq0UyxvYZNNyFPbNT0t6DXftguTzwilhLzlMYBTE4NQw==}
 
-  '@flowpay-io/embed-react@1.0.4':
-    resolution: {integrity: sha512-k82ISS5ogYeBVfx6HFtsiMcBwb6ZybhZ6+WA2ZGDGC34ChJMlJTr/OOXzlXLzxEPnNgHI1ESgD7KUpLGShuNzg==}
+  '@flowpay-io/embed-react@1.0.5':
+    resolution: {integrity: sha512-8iNTIsBvB3pR+HMwB/s7QbbGigx4CDG6BiKQLhmn22+T+wRBxAO+FURZzblSoMZp0xhVMlJSLlvvAdBdF0qbUw==}
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
@@ -1703,7 +1703,7 @@ snapshots:
       '@flowpay-io/shared': 1.0.3
       uuid: 11.1.0
 
-  '@flowpay-io/embed-react@1.0.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@flowpay-io/embed-react@1.0.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@flowpay-io/embed-core': 1.0.4
       '@flowpay-io/shared': 1.0.3
