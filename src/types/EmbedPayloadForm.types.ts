@@ -1,11 +1,17 @@
-import type { InputLaunchPayload } from "@flowpay-io/embed-core";
+import type {
+  InputLaunchPayload,
+  InputMerchantLaunchPayload,
+} from "@flowpay-io/embed-core";
 
 export interface TenantInput {
   id: string;
   name: string;
 }
 
-export interface EmbedFormData extends Omit<InputLaunchPayload, "tenants"> {
+export interface EmbedFormData extends Omit<
+  InputMerchantLaunchPayload,
+  "tenants"
+> {
   tenants: TenantInput[];
 }
 

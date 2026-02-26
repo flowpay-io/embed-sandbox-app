@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@flowpay-io/embed-auth':
-        specifier: 1.0.3
-        version: 1.0.3
+        specifier: 1.1.1
+        version: 1.1.1
       '@flowpay-io/embed-core':
-        specifier: 1.0.4
-        version: 1.0.4
+        specifier: 1.1.1
+        version: 1.1.1
       '@flowpay-io/embed-react':
-        specifier: 1.0.5
-        version: 1.0.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: 1.1.1
+        version: 1.1.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@flowpay-io/shared':
-        specifier: 1.0.3
-        version: 1.0.3
+        specifier: 1.1.1
+        version: 1.1.1
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -361,20 +361,20 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@flowpay-io/embed-auth@1.0.3':
-    resolution: {integrity: sha512-12Mx8k11DbTkTGDaK1RxZRMdl/THoHu3EneQQdVnl8v9q1p440R2XXCHg45KNzlWhDYQpcceb3mU0dmIxXJXVw==}
+  '@flowpay-io/embed-auth@1.1.1':
+    resolution: {integrity: sha512-PrKKhmE3bVGV25hBy7uN9AucBAQOFtJOWCJON8Jf/I44kT9T0tUEY9wFPhozd3gaPjBV1BX6jhCr2sAFWPnZqA==}
 
-  '@flowpay-io/embed-core@1.0.4':
-    resolution: {integrity: sha512-D/oMNFM8yh0KV7PlkZjhey5BaelpjpS5IeiaoMvRbvxq0UyxvYZNNyFPbNT0t6DXftguTzwilhLzlMYBTE4NQw==}
+  '@flowpay-io/embed-core@1.1.1':
+    resolution: {integrity: sha512-6/PzK/RtFZ2cnm7/5PxPsixvL4Wx8g29eEWeuQ9KlPeTBu/trgK+CUBCQVnRpBDXgXs5OCGp+LpIYLEkNgPCxg==}
 
-  '@flowpay-io/embed-react@1.0.5':
-    resolution: {integrity: sha512-8iNTIsBvB3pR+HMwB/s7QbbGigx4CDG6BiKQLhmn22+T+wRBxAO+FURZzblSoMZp0xhVMlJSLlvvAdBdF0qbUw==}
+  '@flowpay-io/embed-react@1.1.1':
+    resolution: {integrity: sha512-65a+ywKzMTE093TMCXfJ6pSLJx/FXncvWQps3E6N0kSyiY4B38B+htUwsMQuAEAzjJPeVD2b9QeNekO33k8W0Q==}
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@flowpay-io/shared@1.0.3':
-    resolution: {integrity: sha512-fuKEv3fybzAOdD8f+KkyJjavXmVbZbRlPK1qb38W10atsdj/KFovXAPmJbZhlI3NeuNhdJlkDIlZzTj/RjdpHA==}
+  '@flowpay-io/shared@1.1.1':
+    resolution: {integrity: sha512-fqhPrTVlycW19gOiiDkeW+KmnxrsiraM4vM53CZ70kJ7Pkb/W1Ay88x+Gp1VQkdgYej+xKNsBc2IsNtenMlM6w==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1693,24 +1693,24 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@flowpay-io/embed-auth@1.0.3':
+  '@flowpay-io/embed-auth@1.1.1':
     dependencies:
-      '@flowpay-io/shared': 1.0.3
+      '@flowpay-io/shared': 1.1.1
 
-  '@flowpay-io/embed-core@1.0.4':
+  '@flowpay-io/embed-core@1.1.1':
     dependencies:
-      '@flowpay-io/embed-auth': 1.0.3
-      '@flowpay-io/shared': 1.0.3
+      '@flowpay-io/embed-auth': 1.1.1
+      '@flowpay-io/shared': 1.1.1
       uuid: 11.1.0
 
-  '@flowpay-io/embed-react@1.0.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@flowpay-io/embed-react@1.1.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@flowpay-io/embed-core': 1.0.4
-      '@flowpay-io/shared': 1.0.3
+      '@flowpay-io/embed-core': 1.1.1
+      '@flowpay-io/shared': 1.1.1
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
 
-  '@flowpay-io/shared@1.0.3': {}
+  '@flowpay-io/shared@1.1.1': {}
 
   '@humanfs/core@0.19.1': {}
 
